@@ -1,0 +1,152 @@
+<?php
+session_start();
+if(!empty($_SESSION['names']))
+{
+  header('location:thana/dashboard.php');
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Bandobast </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+</head>
+
+<body>
+  <div id="cursor"></div>
+  <div id="nav">
+    <img src="./AsstesAll/logo.png">
+    <h4 onclick="window.location.href = '#';">मुख्यपृष्ठ</h4>
+    <h4 class="logo" onclick="window.location.href = '#';">आमच्याबद्दल</h4>
+    <h4 onclick="window.location.href = 'indexAndLogin.php';">स्टेशन लॉगिन/नोंदणी</h4>
+    <h4 onclick="window.location.href = 'adminLogin.php';">प्रशासक लॉगिन</h4>
+  </div>
+
+
+  <video autoplay loop muted playinline src="./AsstesAll/Police Scorpio Kaa.mp4"></video>
+
+  <div id="main">
+    <div id="page1">
+      <span>
+        <img src="./AsstesAll/logo.png">
+        सद्रक्षणाय खलनिग्रहणाय
+      </span>
+      <h1>Your Safety, Our Priority</h1>
+    </div>
+
+    <div id="page2">
+      <div id="scroller">
+        <div id="scroller-in">
+          <h4>Safety</h4>
+          <h4>is</h4>
+          <h4>our</h4>
+          <h4>duty,</h4>
+          <h4>justice</h4>
+          <h4>is</h4>
+          <h4>our</h4>
+          <h4>mission,</h4>
+          <h4>and</h4>
+          <h4>your</h4>
+          <h4>security</h4>
+          <h4>is</h4>
+          <h4>our</h4>
+          <h4>priority.</h4>
+          <h4>Together,</h4>
+          <h4>let's</h4>
+          <h4>build</h4>
+          <h4>safer</h4>
+          <h4>and</h4>
+          <h4>stronger</h4>
+          <h4>India</h4>
+        </div>
+      </div>
+    </div id="page2">
+
+    <div id="about-us">
+      <img src="./AsstesAll/bose.jpeg" alt="" />
+      <h1 id="Major">Tukaram Omble</h4>
+        <div id="about-us-in">
+          <h3>ABOUT Maharshtra Police</h3>
+          <p>
+            we are committed to upholding safety, justice, and security in our communities. Our dedicated team of police
+            constables is the backbone of our law enforcement efforts, working tirelessly to protect and serve the
+            public. With a deep sense of duty and a commitment to the highest standards of professionalism, our
+            constables strive to maintain law and order, prevent crime, and ensure the well-being of all citizens.
+          </p>
+        </div>
+        <img src="./AsstesAll/about_us.avif" alt="" />
+        <h2>Major Sandip </br> Unnikrishnan</h2>
+    </div>
+
+
+    <div id="page3">
+      <p>
+        Guardians of Justice, dedicated to the service of the nation. With unwavering resolve and a commitment to
+        protect, the Indian Police Control System stands as a symbol of safety, security, and community. We are here
+        to serve, ensuring a safer India for all
+      </p>
+      <img id="colon1" src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/quote-left.svg" alt="" />
+      <img id="colon2" src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/quote-right.svg" alt="" />
+    </div>
+
+
+    <div id="page4">
+      <h1>WHAT ARE YOU WAITING FOR?</h1>
+      <div class="elem">
+        <h2>Ganapati Visarjan</h2>
+        <img src="./AsstesAll/1.jpg" alt="" />
+      </div>
+      <div class="elem">
+        <h2>Covid-19</h2>
+        <img src="./AsstesAll/2.avif" alt="" />
+      </div>
+      <div class="elem">
+        <h2>New Year</h2>
+        <img src="./AsstesAll/3.avif" alt="" />
+      </div>
+    </div>
+
+
+    <div id="footer">
+      <!-- <img src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/dots-footer.svg" alt="" /> -->
+      <div id="f1">
+      </div>
+      <div id="f2">
+        <h3>Contact Us On</h3>
+        <h4>policebandobast12@gmail.com</h4>
+      </div>
+      <div id="f3">
+        <h3>© २०२१ महाराष्ट्र राज्य पोलीस</h3>
+      </div>
+      <div id="f4">
+        <h4>
+          Office of the </br>
+          superintendent of police,</br>
+          Vajirabad Square ,</br>
+          Nanded</br>
+          Phone No:-02462
+        </h4>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+    integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+    integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="script.js"></script>
+  <script src="new.js"></script>
+</body>
+</html>

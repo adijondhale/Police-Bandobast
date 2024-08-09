@@ -1,0 +1,406 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+/* Navigation Bar Code */
+#nav {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 150px;
+  gap: 40px;
+  position: fixed;
+  z-index: 99;
+}
+
+#nav span{
+  justify-content: end;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+#nav h4 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+}
+#nav .logo
+{
+  margin-right: auto;
+}
+
+#nav h4:hover
+{
+  font-weight: 600;
+  display: inline-block;
+  width: fit-content;
+  height: fit-content;
+  color: #00c3ff;
+  cursor: pointer;
+}
+
+video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: fixed;
+}
+#nav img {
+  height: 60px;
+
+}
+#nav img:hover
+{
+  transform: scale(1.2);
+  transition-duration: 1s;
+  filter: brightness(0) invert(1);
+  /* transition: all 1s linear; */
+}
+
+#main {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#page1 {
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+#page1 h1 {
+  font-size: 35px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  position: absolute;
+  color: rgb(0, 0, 0);
+  font-weight: 900;
+  top: 16%;
+  -webkit-text-stroke: 0.5px #ffffff;
+}
+
+span {
+  font-size: 3em;
+  font-weight: 700;
+  position: absolute;
+  color: rgb(255, 255, 255);
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: linear-gradient(gold, gold);
+  background-size: 100% 8px;
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+  transition: background-size 0.7s, background-position 0.5s ease-in-out;
+}
+
+span:hover {
+  background-size: 100% 100%;
+  background-position: 0% 100%;
+  transition: background-position 0.7s, background-size 0.5s ease-in-out;
+}
+
+#page1 img {
+  height: 50px;
+  padding-left: 10px;
+  padding-top: 10px;
+  filter: brightness(0) invert(1);
+}
+
+#page2 {
+  height: 30vh;
+  width: 100%;
+}
+
+/* A Scroller code which has text of security and all */
+#scroller {
+  white-space: nowrap;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+#scroller-in {
+  display: inline-block;
+  white-space: nowrap;
+  animation-name: scroll;
+  animation-duration: 40s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  word-spacing: 10px;
+}
+
+#scroller::-webkit-scrollbar {
+  display: none;
+}
+
+#scroller h4 {
+  display: inline-block;
+  font-size: 70px;
+  font-family: monospace;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 900;
+  transition: all linear 0.1s;
+  font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+  margin-right: 10px;
+  -webkit-text-stroke: 0.5px #ffffff;
+}
+
+#scroller h4:hover {
+  color: #95c11e;
+  -webkit-text-stroke: 2px #95c11e;
+}
+@keyframes scroll {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Abous Maharashtra Police  and the true legends image code */
+#about-us {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  padding: 0 50px;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  justify-content: space-around;
+  grid-template-rows: auto;
+}
+
+#about-us img {
+  height: 220px;
+  width: 220px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+#about-us h1 {
+  text-transform: capitalize;
+  position: absolute;
+  size: 40px;
+  left: 9%;
+  top: 85%;
+  font-size: 20px;
+}
+#about-us h2 {
+  text-transform: capitalize;
+  position: absolute;
+  left: 82.5%;
+  top: 85%;
+  font-size: 20px;
+  font-family: a;
+}
+
+#about-us-in {
+  width: 50%;
+  text-align: center;
+}
+
+#about-us-in h3 {
+  font-size: 54px;
+  font-weight: 800;
+  margin-bottom: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+#about-us-in p {
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: capitalize;
+  font-family: monospace;
+}
+
+/* Page 3 Starts from here the Quote Code from here */
+#page3 {
+  height: 100vh;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+}
+
+#page3 > p {
+  font-size: 35px;
+  font-weight: 700;
+  width: 70%;
+  line-height: 45px;
+  text-align: center;
+}
+
+#page3 img {
+  position: absolute;
+  height: 60px;
+}
+#page3 #colon1 {
+  left: 15%;
+  top: 25%;
+  filter: brightness(0) invert(1);
+}
+#page3 #colon2 {
+  bottom: 30%;
+  right: 15%;
+  filter: brightness(0) invert(1);
+}
+/* Page 4 which have 3 images with hover effect */
+
+#page4 {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  position: relative;
+  background-color: #000;
+}
+
+.elem {
+  height: 70%;
+  width: 26%;
+  overflow: hidden;
+  border-radius: 20px;
+  position: relative;
+}
+
+.elem h2 {
+  height: 100%;
+  width: 100%;
+  background-color: orange;
+  display: flex;
+  color: #000;
+  font-weight: 800;
+  align-items: center;
+  justify-content: center;
+  transition: all ease 0.5s;
+  font-size: 2vw;
+  position: absolute;
+  z-index: 10;
+}
+
+.elem img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all ease 0.5s;
+  scale: 1.1;
+}
+
+.elem:hover h2 {
+  color: #fff;
+  background-color: transparent;
+}
+.elem:hover img {
+  scale: 1;
+}
+#page4 h1 {
+  font-size: 4vw;
+  position: absolute;
+  top: -15%;
+  font-weight: 900;
+  color: orange;
+  /* -webkit-text-stroke: 2px #ff0000; */
+  font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+/* footer Code Starts from here */
+#footer {
+  height: 25vh;
+  width: 100%;
+  /* background: linear-gradient(to left bottom, #b7c2c4 0%, #000000 60%); */
+  background: #000;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6.5vw;
+  padding: 0 150px;
+}
+
+#footer > img {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  z-index: 0;
+}
+#f1 img {
+  height: 100px;
+}
+#f1,
+#f2,
+#f3,
+#f4 {
+  width: fit-content;
+  position: relative;
+  z-index: 99;
+}
+#f2 h3 {
+  font-size: 1.6vw;
+  white-space: nowrap;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 900;
+  margin-bottom: 8px;
+}
+
+#f3 h3 {
+  font-size: 20px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+#f4 h4 {
+  font-size: 1vw;
+  white-space: nowrap;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 20px;
+  margin-bottom: 8px;
+}
+
+/* Scrollbar Code */
+
+body::-webkit-scrollbar {
+  display: block;
+  width: 6px;
+  background: #ffbb00;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border-radius: 30px;
+}
+
+
+
+
+/* added a simple rounded cursor using gsap */
+/* #cursor {
+  height: 14px;
+  width: 14px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 100;
+  transition: all linear 0.15s;
+} */
